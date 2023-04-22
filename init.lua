@@ -41,6 +41,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.opt.nu = true
 
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
@@ -65,6 +66,7 @@ vim.opt.rtp:prepend(lazypath)
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
+  'EdenEast/nightfox.nvim',
 
   -- Git related plugins
   'tpope/vim-fugitive',
