@@ -29,5 +29,10 @@ vim.keymap.set('n', '<C-p>', require('telescope.builtin').find_files, { desc = "
 vim.keymap.set('n', '<leader>Gs', vim.cmd.Git, { desc = "[G]it [S]tatus" })
 vim.keymap.set('n', '<leader>Gp', vim.cmd.Git, { desc = "[G]it [P]ush" })
 
+-- convenience
+vim.keymap.set('n', '<leader>px', function ()
+	vim.cmd('Ex')
+end, { desc = "E[x]plore" })
+
 return {}
 
