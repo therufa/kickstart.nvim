@@ -8,7 +8,6 @@ require('nightfox').setup({
 	}
 })
 
-
 function DressUpBitches(color)
 	color = color or 'duskfox'
 	vim.cmd.colorscheme(color)
