@@ -9,6 +9,6 @@ return {
 	},
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
   config = function()
-    require('treesj').setup({--[[ your config ]]})
+    require('treesj').setup({})
   end,
 }
